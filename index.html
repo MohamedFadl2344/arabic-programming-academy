@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة البرمجة العربية</title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Offcanvas Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code ms-2"></i>
+                منصة البرمجة العربية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">منصة البرمجة العربية</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">الدورات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learning-paths.html">المسارات التعليمية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="login.html" class="btn btn-light">
+                            <i class="fas fa-sign-in-alt ms-1"></i> تسجيل دخول
+                        </a>
+                        <a href="register.html" class="btn custom-outline-btn">
+                            <i class="fas fa-user-plus ms-1"></i> حساب جديد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="hero-title mb-4">تعلم البرمجة باللغة العربية</h1>
+                    <p class="hero-description mb-4">ابدأ رحلتك في عالم البرمجة مع أفضل المدربين العرب. دورات احترافية، مشاريع عملية، ودعم مستمر.</p>
+                    <div class="hero-buttons d-flex gap-3 flex-wrap">
+                        <button class="custom-primary-btn">
+                            <i class="fas fa-play-circle ms-1"></i>
+                            ابدأ التعلم مجاناً
+                        </button>
+                        <button class="custom-outline-btn">
+                            <i class="fas fa-book ms-1"></i>
+                            تصفح الدورات
+                        </button>
+                    </div>
+                    <div class="hero-stats mt-5 d-none d-md-flex">
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>طالب</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>دورة تدريبية</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>مدرب محترف</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <img src="images/home/hero-home.png" alt="Hero Image" class="img-fluid rounded-4 shadow-lg">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>تعلم البرمجة</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-users"></i>
+                            <span>مجتمع داعم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <span class="section-subtitle">من نحن</span>
+                        <h2 class="section-title">نحن نبني مستقبل التعليم البرمجي باللغة العربية</h2>
+                        <p class="about-description">منصة البرمجة العربية هي منصة تعليمية متخصصة في تقديم محتوى برمجي عالي الجودة باللغة العربية. نحن نؤمن بأن اللغة لا يجب أن تكون عائقاً في تعلم البرمجة.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <h4>خبراء متخصصون</h4>
+                                <p>نخبة من أفضل المدربين العرب في مجال البرمجة</p>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h4>محتوى عملي</h4>
+                                <p>تدريبات ومشاريع عملية لتعزيز المهارات البرمجية</p>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <h4>مرونة في التعلم</h4>
+                                <p>تعلم في أي وقت وفي أي مكان بالسرعة التي تناسبك</p>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-icon">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <h4>مجتمع داعم</h4>
+                                <p>مجتمع نشط من المبرمجين العرب للدعم والمساعدة</p>
+                            </div>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                <span class="stat-number">10,000+</span>
+                                <span class="stat-label">طالب</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">دورة تدريبية</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">مدرب محترف</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-main">
+                            <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="برمجة وتطوير" class="img-fluid main-image">
+                        </div>
+                        <div class="about-image-shape"></div>
+                        <div class="experience-badge">
+                            <span class="number">5+</span>
+                            <span class="text">سنوات<br>خبرة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+     <!-- Courses Section -->
+     <section class="courses-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">الدورات المتاحة</h2>
+                <p class="section-description">اختر من بين مجموعة متنوعة من الدورات التدريبية المصممة خصيصاً لتطوير مهاراتك البرمجية</p>
+            </div>
+            
+            <div class="courses-wrapper position-relative">
+                <div id="coursesCarousel" class="owl-carousel" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Course Card 1 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://placehold.co/400x250" alt="دورة تطوير الويب" class="img-fluid">
+                            <div class="course-category">تطوير الويب</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">تطوير الواجهات الأمامية</h3>
+                            <div class="course-info">
+                                <span><i class="fas fa-clock"></i> 20 ساعة</span>
+                                <span><i class="fas fa-user-graduate"></i> 150 طالب</span>
+                            </div>
+                            <p class="course-description">تعلم أساسيات تطوير الواجهات الأمامية باستخدام HTML, CSS, و JavaScript</p>
+                            <div class="course-footer">
+                                <div class="course-price">499 ج.م</div>
+                                <button class="btn btn-register">سجل الآن</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://placehold.co/400x250" alt="دورة بايثون" class="img-fluid">
+                            <div class="course-category">بايثون</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">البرمجة بلغة بايثون</h3>
+                            <div class="course-info">
+                                <span><i class="fas fa-clock"></i> 25 ساعة</span>
+                                <span><i class="fas fa-user-graduate"></i> 200 طالب</span>
+                            </div>
+                            <p class="course-description">تعلم أساسيات البرمجة باستخدام لغة بايثون من الصفر حتى الاحتراف</p>
+                            <div class="course-footer">
+                                <div class="course-price">599 ج.م</div>
+                                <button class="btn btn-register">سجل الآن</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 3 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://placehold.co/400x250" alt="دورة React" class="img-fluid">
+                            <div class="course-category">React</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">تطوير تطبيقات React</h3>
+                            <div class="course-info">
+                                <span><i class="fas fa-clock"></i> 30 ساعة</span>
+                                <span><i class="fas fa-user-graduate"></i> 120 طالب</span>
+                            </div>
+                            <p class="course-description">تعلم بناء تطبيقات الويب التفاعلية باستخدام مكتبة React</p>
+                            <div class="course-footer">
+                                <div class="course-price">699 ج.م</div>
+                                <button class="btn btn-register">سجل الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-nav" id="coursesCustomNav">
+                    <button class="custom-prev">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="custom-next">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section class="learning-paths-section">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">المسارات التعليمية</h2>
+                <p class="section-description">اختر مسارك التعليمي وابدأ رحلة التعلم مع أفضل الخبراء في مجال البرمجة</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Frontend Path -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="path-title">تطوير الواجهات الأمامية</h3>
+                        <div class="path-stats">
+                            <span><i class="fas fa-book"></i> 12 دورة</span>
+                            <span><i class="fas fa-clock"></i> 120 ساعة</span>
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-steps">
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">HTML & CSS</span>
+                                </div>
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">JavaScript</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="step-icon">3</span>
+                                    <span class="step-label">React.js</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">4</span>
+                                    <span class="step-label">Next.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-path-details">
+                            <span>تفاصيل المسار</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Backend Path -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="path-title">تطوير الخلفيات</h3>
+                        <div class="path-stats">
+                            <span><i class="fas fa-book"></i> 10 دورات</span>
+                            <span><i class="fas fa-clock"></i> 100 ساعة</span>
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-steps">
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">Python</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="step-icon">2</span>
+                                    <span class="step-label">Django</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">3</span>
+                                    <span class="step-label">REST APIs</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">4</span>
+                                    <span class="step-label">DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-path-details">
+                            <span>تفاصيل المسار</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Development Path -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="path-title">تطوير تطبيقات الموبايل</h3>
+                        <div class="path-stats">
+                            <span><i class="fas fa-book"></i> 8 دورات</span>
+                            <span><i class="fas fa-clock"></i> 90 ساعة</span>
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-steps">
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">Dart</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="step-icon">2</span>
+                                    <span class="step-label">Flutter</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">3</span>
+                                    <span class="step-label">Firebase</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">4</span>
+                                    <span class="step-label">State Management</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-path-details">
+                            <span>تفاصيل المسار</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">المدونة</h2>
+                <p class="section-description">أحدث المقالات والمواضيع في عالم البرمجة والتطوير</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://placehold.co/400x250" alt="مقال عن البرمجة" class="img-fluid">
+                            <div class="blog-category">تطوير الويب</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> 25 يناير 2025</span>
+                                <span><i class="far fa-user"></i> أحمد محمد</span>
+                            </div>
+                            <h3 class="blog-title">أفضل 10 ممارسات في تطوير الواجهات الأمامية</h3>
+                            <p class="blog-excerpt">تعرف على أهم الممارسات التي يجب اتباعها عند تطوير واجهات المستخدم الحديثة...</p>
+                            <a href="#" class="blog-link">
+                                <span>اقرأ المزيد</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://placehold.co/400x250" alt="مقال عن البايثون" class="img-fluid">
+                            <div class="blog-category">بايثون</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> 20 يناير 2025</span>
+                                <span><i class="far fa-user"></i> سارة أحمد</span>
+                            </div>
+                            <h3 class="blog-title">دليلك الشامل لتعلم بايثون في 2025</h3>
+                            <p class="blog-excerpt">خطوات مفصلة ونصائح قيمة لبدء رحلتك في تعلم لغة البرمجة بايثون...</p>
+                            <a href="#" class="blog-link">
+                                <span>اقرأ المزيد</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://placehold.co/400x250" alt="مقال عن الذكاء الاصطناعي" class="img-fluid">
+                            <div class="blog-category">الذكاء الاصطناعي</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> 15 يناير 2025</span>
+                                <span><i class="far fa-user"></i> محمد علي</span>
+                            </div>
+                            <h3 class="blog-title">مستقبل الذكاء الاصطناعي في تطوير البرمجيات</h3>
+                            <p class="blog-excerpt">كيف يغير الذكاء الاصطناعي طريقة تطويرنا للبرمجيات وما هي التقنيات الجديدة...</p>
+                            <a href="#" class="blog-link">
+                                <span>اقرأ المزيد</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <span>تصفح جميع المقالات</span>
+                    <i class="fas fa-arrow-left me-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">الأسئلة الشائعة</h2>
+                <p class="section-description">إجابات على أكثر الأسئلة شيوعاً حول منصتنا وخدماتنا</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    كيف يمكنني البدء في التعلم على المنصة؟
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يمكنك البدء بإنشاء حساب مجاني على المنصة، ثم اختيار المسار التعليمي المناسب لك. بعد ذلك، يمكنك البدء في متابعة الدورات والتدريبات العملية وفقاً لجدولك الخاص.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    هل الشهادات معتمدة؟
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، جميع شهاداتنا معتمدة من جهات دولية متخصصة في مجال التعليم التقني. يمكنك استخدام هذه الشهادات في سيرتك الذاتية وإضافتها إلى ملفك المهني.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ما هي طرق الدفع المتاحة؟
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نوفر العديد من طرق الدفع المريحة، بما في ذلك البطاقات الائتمانية، والتحويل البنكي، وفودافون كاش، ومحفظة باي بال. كما نقدم خيارات تقسيط مرنة للدورات.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    هل يمكنني الوصول إلى المحتوى مدى الحياة؟
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، بمجرد شرائك لأي دورة، ستحصل على وصول مدى الحياة إلى جميع محتوياتها. يمكنك مراجعة المحتوى في أي وقت ومن أي مكان.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">تواصل معنا</h2>
+                <p class="section-description">نحن هنا لمساعدتك. تواصل معنا وسنرد عليك في أقرب وقت ممكن</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>العنوان</h3>
+                            <p>القاهرة، مصر<br>شارع التحرير، وسط البلد</p>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>اتصل بنا</h3>
+                            <p>+20 123 456 7890<br>+20 198 765 4321</p>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@example.com<br>support@example.com</p>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="#" class="social-icon text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon text-decoration-none"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon text-decoration-none"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">الاسم</label>
+                                        <input type="text" class="form-control" id="name" placeholder="أدخل اسمك">
+                                        <div class="focus-border"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" id="email" placeholder="أدخل بريدك الإلكتروني">
+                                        <div class="focus-border"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="subject">الموضوع</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="أدخل موضوع الرسالة">
+                                        <div class="focus-border"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message">الرسالة</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك هنا"></textarea>
+                                        <div class="focus-border"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <span>إرسال الرسالة</span>
+                                        <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="contact-shape-1"></div>
+        <div class="contact-shape-2"></div>
+        <div class="contact-shape-3"></div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">آراء المستخدمين</h2>
+                <p class="section-description">ماذا يقول طلابنا عن تجربتهم مع الأكاديمية</p>
+            </div>
+
+            <div class="testimonials-wrapper" data-aos="fade-up">
+                <div id="testimonialsCarousel" class="owl-carousel testimonials-carousel">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">تجربة رائعة مع الأكاديمية. المحتوى التعليمي ممتاز والمدربين على مستوى عالٍ من الكفاءة. استفدت كثيراً من الدورات وأوصي بها بشدة لكل من يريد تعلم البرمجة.</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://placehold.co/100x100" alt="أحمد محمد">
+                            </div>
+                            <div class="author-info">
+                                <h4>أحمد محمد</h4>
+                                <p>مطور واجهات أمامية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">المنصة سهلة الاستخدام والمحتوى منظم بشكل رائع. أحب كيف يتم شرح المفاهيم المعقدة بطريقة مبسطة. التدريبات العملية ساعدتني كثيراً في فهم البرمجة.</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://placehold.co/100x100" alt="سارة أحمد">
+                            </div>
+                            <div class="author-info">
+                                <h4>سارة أحمد</h4>
+                                <p>مطورة تطبيقات موبايل</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">الدعم الفني ممتاز والمدربين متعاونين جداً. استطعت تطوير مهاراتي في البرمجة بشكل كبير خلال فترة قصيرة. أنصح بشدة بالتعلم مع الأكاديمية.</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://placehold.co/100x100" alt="محمد علي">
+                            </div>
+                            <div class="author-info">
+                                <h4>محمد علي</h4>
+                                <p>مطور خلفيات</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">المسارات التعليمية مصممة بشكل احترافي ومتسلسل. أحب كيف يتم ربط المفاهيم النظرية بالتطبيقات العملية. تجربة تعليمية متكاملة ومميزة.</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://placehold.co/100x100" alt="نور محمد">
+                            </div>
+                            <div class="author-info">
+                                <h4>نور محمد</h4>
+                                <p>مطورة ويب شاملة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Navigation -->
+                <div class="testimonials-nav">
+                    <button id="testimonialsPrev" class="nav-button prev">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button id="testimonialsNext" class="nav-button next">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="testimonials-shape-1"></div>
+        <div class="testimonials-shape-2"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand mb-4">
+                        <i class="fas fa-code ms-2"></i>
+                        منصة البرمجة العربية
+                    </div>
+                    <p class="footer-description">منصتك الأولى لتعلم البرمجة باللغة العربية مع نخبة من أفضل المدربين العرب.</p>
+                    <div class="footer-social mt-4">
+                        <a href="#" class="social-link text-decoration-none" aria-label="فيسبوك">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link text-decoration-none" aria-label="تويتر">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link text-decoration-none" aria-label="لينكد إن">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link text-decoration-none" aria-label="يوتيوب">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">الدورات</a></li>
+                        <li><a href="#">المسارات التعليمية</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">المسارات التعليمية</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">تطوير الويب</a></li>
+                        <li><a href="#">تطوير تطبيقات الموبايل</a></li>
+                        <li><a href="#">علوم البيانات</a></li>
+                        <li><a href="#">الذكاء الاصطناعي</a></li>
+                        <li><a href="#">أمن المعلومات</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">معلومات الاتصال</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+20 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@arabicprogramming.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>القاهرة، مصر</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright mb-0">
+                            جميع الحقوق محفوظة &copy; <span id="currentYear">2024</span> منصة البرمجة العربية
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Add Owl Carousel JS before closing body tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/courses.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/testimonials.js"></script>
+</body>
+</html>

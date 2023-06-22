@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - منصة البرمجة العربية</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/auth-styles.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div class="auth-pattern"></div>
+        <div class="container">
+            <div id="auth-card">
+                <div id="auth-header">
+                    <img src="assets/images/logo.png" alt="Logo" id="auth-logo">
+                    <h1 id="auth-title">إنشاء حساب جديد</h1>
+                    <p id="auth-subtitle">انضم إلى مجتمع منصة البرمجة العربية</p>
+                </div>
+                
+                <div id="auth-body">
+                    <form id="register-form" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="auth-form-group">
+                                    <label for="first-name" class="auth-label">الاسم الأول</label>
+                                    <input type="text" class="auth-input" id="first-name" placeholder="أدخل اسمك الأول" required>
+                                    <div class="invalid-feedback">يرجى إدخال الاسم الأول</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="auth-form-group">
+                                    <label for="last-name" class="auth-label">الاسم الأخير</label>
+                                    <input type="text" class="auth-input" id="last-name" placeholder="أدخل اسمك الأخير" required>
+                                    <div class="invalid-feedback">يرجى إدخال الاسم الأخير</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="auth-form-group">
+                            <label for="email" class="auth-label">البريد الإلكتروني</label>
+                            <input type="email" class="auth-input" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                            <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صحيح</div>
+                        </div>
+                        
+                        <div class="auth-form-group">
+                            <label for="phone" class="auth-label">رقم الهاتف</label>
+                            <input type="tel" class="auth-input" id="phone" placeholder="أدخل رقم هاتفك" required>
+                            <div class="invalid-feedback">يرجى إدخال رقم هاتف صحيح</div>
+                        </div>
+                        
+                        <div class="auth-form-group">
+                            <label for="password" class="auth-label">كلمة المرور</label>
+                            <input type="password" class="auth-input" id="password" placeholder="أدخل كلمة المرور" required>
+                            <div class="invalid-feedback">يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل</div>
+                            <div id="password-strength" class="password-strength"></div>
+                        </div>
+                        
+                        <div class="auth-form-group">
+                            <label for="confirm-password" class="auth-label">تأكيد كلمة المرور</label>
+                            <input type="password" class="auth-input" id="confirm-password" placeholder="أعد إدخال كلمة المرور" required>
+                            <div class="invalid-feedback">كلمات المرور غير متطابقة</div>
+                        </div>
+                        
+                        <div class="form-check mb-4">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                أوافق على <a href="#" id="auth-footer-link">الشروط والأحكام</a>
+                            </label>
+                            <div class="invalid-feedback">يجب الموافقة على الشروط والأحكام</div>
+                        </div>
+                        
+                        <button type="submit" id="auth-submit-btn">إنشاء حساب</button>
+                        
+                        <div class="auth-divider">
+                            <span>أو</span>
+                        </div>
+                        
+                        <div class="auth-social-buttons">
+                            <button type="button" class="auth-social-btn" id="google-login-btn">
+                                <i class="fab fa-google"></i>
+                                <span>التسجيل عبر Google</span>
+                            </button>
+                            <button type="button" class="auth-social-btn" id="facebook-login-btn">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>التسجيل عبر Facebook</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="auth-footer">
+                    <p id="auth-footer-text">
+                        لديك حساب بالفعل؟
+                        <a href="login.html" id="auth-footer-link">تسجيل الدخول</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Custom JavaScript -->
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

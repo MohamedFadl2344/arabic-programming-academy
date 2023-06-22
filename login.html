@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - منصة البرمجة العربية</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/auth-styles.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div class="auth-pattern"></div>
+        <div class="container">
+            <div id="auth-card">
+                <div id="auth-header">
+                    <img src="assets/images/logo.png" alt="Logo" id="auth-logo">
+                    <h1 id="auth-title">تسجيل الدخول</h1>
+                    <p id="auth-subtitle">مرحباً بك في منصة البرمجة العربية</p>
+                </div>
+                
+                <div id="auth-body">
+                    <form id="login-form" novalidate>
+                        <div class="auth-form-group">
+                            <label for="email" class="auth-label">البريد الإلكتروني</label>
+                            <input type="email" class="auth-input" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                            <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صحيح</div>
+                        </div>
+                        
+                        <div class="auth-form-group">
+                            <label for="password" class="auth-label">كلمة المرور</label>
+                            <input type="password" class="auth-input" id="password" placeholder="أدخل كلمة المرور" required>
+                            <div class="invalid-feedback">يرجى إدخال كلمة المرور</div>
+                        </div>
+                        
+                        <div class="form-check mb-4">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label" for="remember-me">تذكرني</label>
+                        </div>
+                        
+                        <button type="submit" id="auth-submit-btn">تسجيل الدخول</button>
+                        
+                        <div class="auth-divider">
+                            <span>أو</span>
+                        </div>
+                        
+                        <div class="auth-social-buttons">
+                            <button type="button" class="auth-social-btn" id="google-login-btn">
+                                <i class="fab fa-google"></i>
+                                <span>الدخول عبر Google</span>
+                            </button>
+                            <button type="button" class="auth-social-btn" id="facebook-login-btn">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>الدخول عبر Facebook</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="auth-footer">
+                    <p id="auth-footer-text">
+                        ليس لديك حساب؟
+                        <a href="register.html" id="auth-footer-link">إنشاء حساب جديد</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Custom JavaScript -->
+    <script src="js/auth.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('login-form');
+            const passwordInput = document.getElementById('password');
+
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+        });
+    </script>
+</body>
+</html>

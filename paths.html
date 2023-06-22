@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسارات التعليمية - منصة البرمجة العربية</title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero-styles.css">
+</head>
+<body>
+    <!-- Offcanvas Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code ms-2"></i>
+                منصة البرمجة العربية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">منصة البرمجة العربية</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">الدورات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="paths.html">المسارات التعليمية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="login.html" class="btn btn-light">
+                            <i class="fas fa-sign-in-alt ms-1"></i> تسجيل دخول
+                        </a>
+                        <a href="register.html" class="btn custom-outline-btn">
+                            <i class="fas fa-user-plus ms-1"></i> حساب جديد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="paths-hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 id="paths-hero-title">مسارات التعلم</h1>
+            <p id="paths-hero-description">اكتشف مسارات التعلم المتخصصة في البرمجة باللغة العربية. نقدم لك خريطة طريق واضحة للوصول إلى أهدافك البرمجية</p>
+            <a href="#paths-content" class="hero-btn" id="paths-hero-btn">استكشف المسارات</a>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="mt-5 pt-5" id="paths-content">
+        <!-- Learning Paths Section -->
+    <section class="learning-paths-section">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-3">المسارات التعليمية</h2>
+                <p class="section-description">اختر مسارك التعليمي وابدأ رحلة التعلم مع أفضل الخبراء في مجال البرمجة</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Frontend Path -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="path-title">تطوير الواجهات الأمامية</h3>
+                        <div class="path-stats">
+                            <span><i class="fas fa-book"></i> 12 دورة</span>
+                            <span><i class="fas fa-clock"></i> 120 ساعة</span>
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-steps">
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">HTML & CSS</span>
+                                </div>
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">JavaScript</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="step-icon">3</span>
+                                    <span class="step-label">React.js</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">4</span>
+                                    <span class="step-label">Next.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-path-details">
+                            <span>تفاصيل المسار</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Backend Path -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="path-title">تطوير الخلفيات</h3>
+                        <div class="path-stats">
+                            <span><i class="fas fa-book"></i> 10 دورات</span>
+                            <span><i class="fas fa-clock"></i> 100 ساعة</span>
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-steps">
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">Python</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="step-icon">2</span>
+                                    <span class="step-label">Django</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">3</span>
+                                    <span class="step-label">REST APIs</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">4</span>
+                                    <span class="step-label">DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-path-details">
+                            <span>تفاصيل المسار</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Development Path -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="path-card">
+                        <div class="path-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="path-title">تطوير تطبيقات الموبايل</h3>
+                        <div class="path-stats">
+                            <span><i class="fas fa-book"></i> 8 دورات</span>
+                            <span><i class="fas fa-clock"></i> 90 ساعة</span>
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-steps">
+                                <div class="step completed">
+                                    <span class="step-icon"><i class="fas fa-check"></i></span>
+                                    <span class="step-label">Dart</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="step-icon">2</span>
+                                    <span class="step-label">Flutter</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">3</span>
+                                    <span class="step-label">Firebase</span>
+                                </div>
+                                <div class="step">
+                                    <span class="step-icon">4</span>
+                                    <span class="step-label">State Management</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-path-details">
+                            <span>تفاصيل المسار</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand mb-4">
+                        <i class="fas fa-code ms-2"></i>
+                        منصة البرمجة العربية
+                    </div>
+                    <p class="footer-description">منصتك الأولى لتعلم البرمجة باللغة العربية مع نخبة من أفضل المدربين العرب.</p>
+                    <div class="footer-social mt-4">
+                        <a href="#" class="social-link" aria-label="فيسبوك">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تويتر">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="لينكد إن">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="يوتيوب">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">الدورات</a></li>
+                        <li><a href="#">المسارات التعليمية</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">المسارات التعليمية</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">تطوير الويب</a></li>
+                        <li><a href="#">تطوير تطبيقات الموبايل</a></li>
+                        <li><a href="#">علوم البيانات</a></li>
+                        <li><a href="#">الذكاء الاصطناعي</a></li>
+                        <li><a href="#">أمن المعلومات</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">معلومات الاتصال</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+20 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@arabicprogramming.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>القاهرة، مصر</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright mb-0">
+                            جميع الحقوق محفوظة &copy; <span id="currentYear">2024</span> منصة البرمجة العربية
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
