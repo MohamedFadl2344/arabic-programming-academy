@@ -1,4 +1,7 @@
-<div align="center">
+
+
+# Arabic Programming Academy 🚀
+<div align="right">
   <h3>Built With</h3>
   <a href="https://getbootstrap.com">
     <img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
@@ -16,13 +19,6 @@
     <img src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white" alt="Font Awesome">
   </a>
 </div>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square" alt="Version">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
-</div>
-
-# Arabic Programming Academy 🚀
 
 A comprehensive Arabic educational platform dedicated to teaching programming and technology skills to Arabic-speaking learners.
 
