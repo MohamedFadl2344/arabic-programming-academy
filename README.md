@@ -1,8 +1,7 @@
-
-
 # Arabic Programming Academy 🚀
-<div align="right">
-  <h3>Built With</h3>
+A comprehensive Arabic educational platform dedicated to teaching programming and technology skills to Arabic-speaking learners.
+
+<div align="left">
   <a href="https://getbootstrap.com">
     <img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
   </a>
@@ -19,8 +18,6 @@
     <img src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white" alt="Font Awesome">
   </a>
 </div>
-
-A comprehensive Arabic educational platform dedicated to teaching programming and technology skills to Arabic-speaking learners.
 
 ## Overview
 
